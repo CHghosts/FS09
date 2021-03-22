@@ -4,7 +4,7 @@ let student = {
 	average: null,
 };
 const {name, notes, average} = student;
-// TODO ...
+// TODO ....
 
 // constantes
 console.log(name, notes, average);
