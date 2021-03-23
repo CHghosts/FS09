@@ -26,3 +26,16 @@ console.log('-----------------------------------------------------');
 
 const lenName = new Set(populations.map((population) => population.lenName));
 console.log(lenName);
+console.log('-----------------------------------------------------');
+
+const result = [];
+for (const Name of lenName) {
+    const test = [];
+    for (const population of populations) {
+        if(population.lenName === Name) {
+            test.push(population.name);
+        }
+    }
+    result.push(test)
+}
+console.log(result);
