@@ -29,13 +29,20 @@ console.log(lenName);
 console.log('-----------------------------------------------------');
 
 const result = [];
-for (const Name of lenName) {
+for (const lenght of lenName) {
     const test = [];
     for (const population of populations) {
-        if(population.lenName === Name) {
+        if(population.lenName === lenght) {
             test.push(population.name);
         }
     }
     result.push(test)
 }
 console.log(result);
+console.log('-----------------------------------------------------');
+
+
+for (const lenght of lenName) {
+	const result = new Set(populations.map((name) => populations.filter(population => population.lenName === lenght)));
+	console.log(result);
+}
